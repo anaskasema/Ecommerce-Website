@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f6f7f4">
+    <meta name="description" content="تسوق أحدث الإلكترونيات والهواتف والأجهزة المنزلية من رِدة ستور.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon.png" type="image/png">
+    <title>رِدة ستور | اختيارات تليق بك</title>
+    <script src="javascript/main.js" defer></script>
+</head>
+<body>
+    <div class="announcement-bar">
+        <p>توصيل مجاني للطلبات فوق <strong>500 ر.س</strong></p>
+        <a href="#products">اكتشف عروض الأسبوع <span aria-hidden="true">←</span></a>
+    </div>
+
+    <header class="site-header">
+        <div class="header-main page-shell">
+            <a class="brand" href="#home" aria-label="Anas Online Shop، الرئيسية">
+                <img class="brand-mark" src="img/icon.png" alt="">
+                <span class="brand-type"><strong>Anas</strong><small><b>Online</b> Shop</small></span>
+            </a>
+            <form class="search-box" id="search-form" role="search">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+                <input id="search-input" type="search" placeholder="عن ماذا تبحث اليوم؟" aria-label="ابحث عن المنتجات">
+                <button type="submit">بحث</button>
+            </form>
+            <div class="header-actions">
+                <button class="icon-action account-action" type="button" aria-label="حسابي">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"></circle><path d="M5 20c.7-3.3 3.2-5 7-5s6.3 1.7 7 5"></path></svg>
+                    <span>حسابي</span>
+                </button>
+                <button class="icon-action cart-trigger" id="cart-trigger" type="button" aria-label="السلة، 0 منتجات">
+                    <span class="cart-icon-wrap"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.2 11.1a2 2 0 0 0 2 1.6h8.5a2 2 0 0 0 1.9-1.4L21 9H6"></path><circle cx="10" cy="20" r="1"></circle><circle cx="18" cy="20" r="1"></circle></svg><b id="cart-count">0</b></span>
+                    <span>سلتي</span>
+                </button>
+            </div>
+        </div>
+        <nav class="main-nav" aria-label="التصنيفات الرئيسية">
+            <div class="page-shell nav-inner">
+                <a class="nav-link is-current" href="#home">الرئيسية</a>
+                <a class="nav-link" href="#products" data-category-link="all">كل المنتجات</a>
+                <a class="nav-link" href="#products" data-category-link="mobiles">الهواتف</a>
+                <a class="nav-link" href="#products" data-category-link="electronics">الإلكترونيات</a>
+                <a class="nav-link" href="#products" data-category-link="appliances">الأجهزة المنزلية</a>
+                <a class="nav-link nav-deals" href="#products" data-category-link="deals">عروض مميزة <span>جديد</span></a>
+                <a class="nav-support" href="#footer">تحتاج مساعدة؟ <strong>تواصل معنا</strong></a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero page-shell" aria-label="عروض رِدة ستور">
+            <div class="hero-copy">
+                <span class="eyebrow"><i></i> التقنية التي تناسب يومك</span>
+                <h1>كل ما تحتاجه،<br><span>في مكان واحد.</span></h1>
+                <p>أجهزة مختارة بعناية، وتجربة شراء أسهل من أي وقت.</p>
+                <a class="button button-dark" href="#products">تسوق الآن <span aria-hidden="true">←</span></a>
+                <div class="hero-pagination" aria-label="الشريحة الأولى من ثلاث"><b></b><i></i><i></i><span>01 / 03</span></div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-stamp"><span>اختيارات</span><strong>رِدة</strong><small>هذا الأسبوع</small></div>
+                <img class="hero-product" src="img/product/3.png" alt="كاميرا Canon EOS RP">
+                <div class="hero-note"><span>01</span><p>تقنية رائعة<br>بسعر أفضل</p><span aria-hidden="true">↙</span></div>
+                <div class="hero-orbit"></div>
+            </div>
+            <div class="hero-side-label">REDA ONLINE STORE · 2026</div>
+        </section>
+
+        <section class="service-strip page-shell" aria-label="مميزات التسوق">
+            <div class="service-item"><span class="service-icon">01</span><div><strong>توصيل سريع</strong><small>لكل مكان بكل سهولة</small></div></div>
+            <div class="service-item"><span class="service-icon">02</span><div><strong>دفع آمن</strong><small>طرق دفع موثوقة ومريحة</small></div></div>
+            <div class="service-item"><span class="service-icon">03</span><div><strong>منتجات أصلية</strong><small>جودة نضمنها لك</small></div></div>
+            <div class="service-item"><span class="service-icon">04</span><div><strong>دعم متواصل</strong><small>نحن هنا لمساعدتك</small></div></div>
+        </section>
+
+        <section class="category-section page-shell" aria-labelledby="category-heading">
+            <div class="section-heading compact-heading">
+                <div><span class="section-kicker">تسوق حسب احتياجك</span><h2 id="category-heading">الأقسام <span>الرئيسية</span></h2></div>
+                <a class="text-link" href="#products">كل المنتجات <span aria-hidden="true">←</span></a>
+            </div>
+            <div class="category-grid">
+                <button class="category-tile category-phone" data-category="mobiles" type="button"><span class="category-number">01</span><span class="category-label">الهواتف<br>والجوالات</span><img src="img/product/1.png" alt=""></button>
+                <button class="category-tile category-electronics" data-category="electronics" type="button"><span class="category-number">02</span><span class="category-label">إلكترونيات<br>وترفيه</span><img src="img/product/0.png" alt=""></button>
+                <button class="category-tile category-home" data-category="appliances" type="button"><span class="category-number">03</span><span class="category-label">أجهزة<br>منزلية</span><img src="img/product/13.png" alt=""></button>
+                <a class="category-tile category-offers" href="#products" data-category-link="deals"><span class="category-number">04</span><span class="category-label">فرصتك<br>للتوفير</span><span class="offer-mark">خصم<br><strong>حتى 20%</strong></span><span class="category-arrow" aria-hidden="true">↙</span></a>
+            </div>
+        </section>
+
+        <section class="products-section" id="products" aria-labelledby="products-heading">
+            <div class="page-shell">
+                <div class="section-heading products-heading">
+                    <div><span class="section-kicker">تشكيلة تستحق التجربة</span><h2 id="products-heading">منتجات <span>مختارة</span></h2></div>
+                    <div class="product-controls">
+                        <div class="category-tabs" role="group" aria-label="تصفية حسب القسم">
+                            <button class="filter-button is-active" data-category="all" type="button">الكل</button>
+                            <button class="filter-button" data-category="mobiles" type="button">هواتف</button>
+                            <button class="filter-button" data-category="electronics" type="button">إلكترونيات</button>
+                            <button class="filter-button" data-category="appliances" type="button">منزل</button>
+                        </div>
+                        <label class="sort-control"><span>ترتيب:</span><select id="sort-select" aria-label="ترتيب المنتجات"><option value="featured">الأكثر ملاءمة</option><option value="price-asc">السعر: الأقل أولًا</option><option value="price-desc">السعر: الأعلى أولًا</option><option value="name">الاسم</option></select></label>
+                    </div>
+                </div>
+                <div class="results-line"><span id="results-count">جاري تحميل المنتجات...</span><span class="results-dot"></span><span>منتجات أصلية مختارة لك</span></div>
+                <div class="product-grid" id="product-grid" aria-live="polite"></div>
+                <div class="empty-state" id="empty-state" hidden><span>⌕</span><h3>لم نعثر على منتجات</h3><p>جرّب البحث بكلمات مختلفة أو اختر قسمًا آخر.</p><button class="button button-outline" id="reset-filters" type="button">عرض كل المنتجات</button></div>
+                <div class="load-more-wrap"><button class="button button-outline" id="load-more" type="button">عرض المزيد <span aria-hidden="true">↓</span></button></div>
+            </div>
+        </section>
+
+        <section class="newsletter page-shell">
+            <div class="newsletter-mark" aria-hidden="true">ر.</div>
+            <div><span class="section-kicker">خلك أول من يعرف</span><h2>عروض جديدة، <span>على بريدك.</span></h2><p>اشترك لتصلك اختياراتنا وعروضنا أولًا.</p></div>
+            <form id="newsletter-form" class="newsletter-form"><label class="visually-hidden" for="newsletter-email">بريدك الإلكتروني</label><input id="newsletter-email" type="email" placeholder="بريدك الإلكتروني" required><button type="submit" aria-label="اشترك">اشترك <span aria-hidden="true">←</span></button><small id="newsletter-message" aria-live="polite"></small></form>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="footer">
+        <div class="page-shell footer-main">
+            <div class="footer-brand"><a class="footer-logo" href="#home" aria-label="Anas Online Shop، الرئيسية"><img class="brand-mark" src="img/icon.png" alt=""><span class="brand-type"><strong>Anas</strong><small><b>Online</b> Shop</small></span></a><p>تفاصيل يومك تبدأ باختيار أفضل.<br>رِدة ستور، تسوق بثقة.</p></div>
+            <div class="footer-column"><h3>تسوق</h3><a href="#products">كل المنتجات</a><a href="#products" data-category-link="mobiles">الهواتف</a><a href="#products" data-category-link="electronics">الإلكترونيات</a><a href="#products" data-category-link="appliances">الأجهزة المنزلية</a></div>
+            <div class="footer-column"><h3>خدمة العملاء</h3><a href="#footer">تواصل معنا</a><a href="#footer">الشحن والتوصيل</a><a href="#footer">الاستبدال والاسترجاع</a><a href="#footer">الأسئلة الشائعة</a></div>
+            <div class="footer-contact"><h3>نحن قريبون منك</h3><p>لأي استفسار أو مساعدة، يسعدنا تواصلك.</p><a class="contact-link" href="mailto:hello@redastore.com">hello@redastore.com <span aria-hidden="true">↗</span></a><div class="footer-social"><a href="#footer" aria-label="إنستغرام">ig</a><a href="#footer" aria-label="إكس">x</a><a href="#footer" aria-label="سناب شات">sc</a></div></div>
+        </div>
+        <div class="footer-bottom page-shell"><span>© 2026 رِدة ستور. جميع الحقوق محفوظة.</span><span>صنعناه بعناية، لتسوق بثقة.</span><img src="img/payment_method.png" alt="طرق الدفع المتاحة"></div>
+    </footer>
+
+    <div class="cart-overlay" id="cart-overlay" hidden></div>
+    <aside class="cart-drawer" id="cart-drawer" aria-labelledby="cart-heading" aria-hidden="true">
+        <div class="cart-header"><div><span class="section-kicker">اختياراتك</span><h2 id="cart-heading">سلة التسوق</h2></div><button id="close-cart" class="close-button" type="button" aria-label="إغلاق السلة">×</button></div>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-empty" id="cart-empty"><span>♡</span><h3>سلتك بانتظارك</h3><p>أضف المنتجات التي أعجبتك لتظهر هنا.</p></div>
+        <div class="cart-summary" id="cart-summary" hidden><div><span>المجموع</span><strong id="cart-total">0 ر.س</strong></div><button class="button button-dark checkout-button" id="checkout-button" type="button">إتمام الطلب <span aria-hidden="true">←</span></button><small>يتم احتساب التوصيل عند تأكيد الطلب</small></div>
+    </aside>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
